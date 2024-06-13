@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/brands.css" type="text/css">
+    <link rel="stylesheet" href="CSS/solid.css" type="text/css">
+    <link rel="stylesheet" href="CSS/fontawesome.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="CSS/styles.css" type="text/css">
+    <link rel="shortcut icon" href="IMAGENES/favicon.ico" type="image/x-icon">
+    <title>Lista de Menu</title>
+    <style>
+      .parallax {
+      /* The image used */
+      background-image: url(IMAGENES/comida.jpg);
+  
+      /* Set a specific height */
+      min-height: 500px;
+  
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;                                                        
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+     <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-house"></i>poljis</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="Menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pedidos.html">Pedidos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false"><i class="bi bi-apple"></i>
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-i-cursor"></i> Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-star-of-life"></i> Eber Gael Quezada
+                        Ruiz</a></li>
+                  </ul>
+                </li>
+              </ul>    
+              <h1 class="col-6">Menu</h1>          
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">                
+                <button class="btn btn-outline-success me-2" type="submit">Search</button>
+              </form>                   
+                <div class="nav-item">
+                  <a class="btn btn-primary" href="register.php" role="button">Inicia Sesion</a>         
+              </div>            
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    </div>
+    <div class="parallax">
+      <div class="etiquetas">
+        <div class="container-fluid" style="padding: 10px 5% 1px;" >
+          <div class="row" >
+            <div class="col-md-3 animate__animated animate__heartBeat">
+              <div class="card" style="width: 18rem;">
+                <img src="IMAGENES/Chilaquiles.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Chilaquiles</h5>
+                  <div class="collapse" id="Chilaquiles">
+                    <p class="card-text">... </p>
+                    <a href="Pedidos.html" role="button" id="ButPedir"
+                       class="btn btn-danger">Pedir<i class="fa-solid fa-arrow-right"></i>
+                      </a>
+                  </div>
+                  <a href="#Chilaquiles" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Chilaquiles"
+                    class="btn btn-light">Mas Informacion<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 animate__animated animate__heartBeat">
+              <div class="card" style="width: 18rem;">
+                <img src="IMAGENES/Enchiladas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Enchiladas</h5>
+                  <div class="collapse" id="Enchiladas">
+                    <p class="card-text">...</p>
+                      <div class="Link">
+                      <a href="Pedidos.html"  role="button" aria-expanded="false" 
+                       class="btn btn-danger">Pedir<i class="fa-solid fa-arrow-right"></i></a>
+                      </div>
+                  </div>
+                  <a href="#Enchiladas" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Enchiladas"
+                    class="btn btn-danger">Mas Informacion<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 animate__animated animate__heartBeat">
+              <div class="card" style="width: 18rem;">
+                <img src="IMAGENES/Ensalada.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ensalada</h5>
+                  <div class="collapse" id="Ensalada">
+                    <p class="card-text">...</p>
+                      <a href="Pedidos.html" data-bs-toggle="collapse" role="button" aria-expanded="false"
+                        class="btn btn-danger">Pedir<i class="fa-solid fa-arrow-right"></i>
+                      </a>
+                  </div>
+                  <a href="#Ensalada" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Ensalada"
+                    class="btn btn-danger">Mas Informacion<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 animate__animated animate__heartBeat">
+              <div class="card" style="width: 18rem;">
+                <img src="IMAGENES/Tacos.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tacos</h5>
+                  <div class="collapse" id="Tacos">
+                    <p class="card-text">...</p>
+                      <a href="Pedidos.html" data-bs-toggle="collapse" role="button" aria-expanded="false" id="ButPedir"
+                       class="btn btn-danger">Pedir<i class="fa-solid fa-arrow-right"></i>
+                      </a>
+                      <br>
+                  </div>
+                  <a href="#Tacos" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Tacos"
+                    class="btn btn-danger">Mas Informacion<i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    
+    <div id="JavaSc">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+      </script>
+      <script src="JS/solid.js"></script>
+      <script src="JS/brands.js"></script>
+      <script src="JS/fontawesome.js"></script>
+    </div>
+</body>
+</html>
